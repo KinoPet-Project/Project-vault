@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"1b23ed92d35bdedc","x":-580,"y":220,"width":250,"height":60,"type":"text","text":""},
+		{"id":"3978a4d55f0b1f46","type":"text","text":"Веб-клиент - Next.js","x":-260,"y":-260,"width":200,"height":60},
+		{"id":"9b0a1fd5f2751d23","type":"text","text":"BFF - backend for frontend","x":-285,"y":-140,"width":250,"height":60},
+		{"id":"02c00e4e9871d38d","type":"text","text":"Traefik - reverse proxy","x":-285,"y":-20,"width":250,"height":60},
+		{"id":"6bd382515edd3b28","type":"text","text":"ForwardAuth -  Golang","x":60,"y":-20,"width":250,"height":60},
+		{"id":"472b93413053ce2c","type":"text","text":"FilmService - Golang","x":60,"y":120,"width":250,"height":60},
+		{"id":"0791ff4a236d362b","type":"text","text":"ProfileService - Python","x":-580,"y":120,"width":250,"height":60},
+		{"id":"67616345ba2ce3e4","type":"text","text":"SubService - Golang","x":60,"y":220,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"c5c0a8849850feb4","fromNode":"3978a4d55f0b1f46","fromSide":"bottom","toNode":"9b0a1fd5f2751d23","toSide":"top"},
+		{"id":"d93d8a4436a32198","fromNode":"9b0a1fd5f2751d23","fromSide":"top","toNode":"3978a4d55f0b1f46","toSide":"bottom"},
+		{"id":"8775ab5eb8a3e5b4","fromNode":"9b0a1fd5f2751d23","fromSide":"bottom","toNode":"02c00e4e9871d38d","toSide":"top"},
+		{"id":"6f220d8cd59e8e59","fromNode":"02c00e4e9871d38d","fromSide":"top","toNode":"9b0a1fd5f2751d23","toSide":"bottom"},
+		{"id":"95acf199da37beda","fromNode":"02c00e4e9871d38d","fromSide":"right","toNode":"6bd382515edd3b28","toSide":"left"},
+		{"id":"887d8fa9cdcec5ee","fromNode":"6bd382515edd3b28","fromSide":"left","toNode":"02c00e4e9871d38d","toSide":"right"},
+		{"id":"411a023a92d05fa1","fromNode":"02c00e4e9871d38d","fromSide":"bottom","toNode":"472b93413053ce2c","toSide":"left"},
+		{"id":"e6a4676a11017196","fromNode":"472b93413053ce2c","fromSide":"left","toNode":"02c00e4e9871d38d","toSide":"bottom"},
+		{"id":"b3a14c79fc4bed77","fromNode":"02c00e4e9871d38d","fromSide":"bottom","toNode":"0791ff4a236d362b","toSide":"right"},
+		{"id":"b2105cbfeb172387","fromNode":"02c00e4e9871d38d","fromSide":"bottom","toNode":"67616345ba2ce3e4","toSide":"left"},
+		{"id":"7725e630db65a844","fromNode":"67616345ba2ce3e4","fromSide":"left","toNode":"02c00e4e9871d38d","toSide":"bottom"}
+	]
+}
