@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"3978a4d55f0b1f46","x":-260,"y":-260,"width":340,"height":60,"type":"text","text":""}
+		{"id":"3978a4d55f0b1f46","x":-260,"y":-260,"width":200,"height":60,"type":"text","text":"Веб-клиент - Next.js"}
 	],
 	"edges":[]
 }
