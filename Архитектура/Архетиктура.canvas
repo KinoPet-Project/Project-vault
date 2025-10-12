@@ -1,18 +1,19 @@
 {
 	"nodes":[
-		{"id":"afe835c1e059dfda","x":60,"y":220,"width":250,"height":60,"type":"text","text":""},
 		{"id":"9b0a1fd5f2751d23","type":"text","text":"BFF - backend for frontend","x":-285,"y":-140,"width":250,"height":60},
 		{"id":"02c00e4e9871d38d","type":"text","text":"Traefik - reverse proxy","x":-285,"y":-20,"width":250,"height":60},
 		{"id":"6bd382515edd3b28","type":"text","text":"ForwardAuth -  Golang","x":60,"y":-20,"width":250,"height":60},
-		{"id":"472b93413053ce2c","type":"text","text":"FilmService - Golang","x":60,"y":120,"width":250,"height":60},
-		{"id":"0791ff4a236d362b","type":"text","text":"ProfileService - Python","x":-600,"y":120,"width":250,"height":60},
-		{"id":"1b23ed92d35bdedc","x":-600,"y":220,"width":250,"height":60,"type":"text","text":"LoyaltyService - Python"},
-		{"id":"fd0ca14e45d32053","x":-600,"y":320,"width":250,"height":60,"type":"text","text":"UGCService - Python"},
 		{"id":"cb65ab1832946249","x":520,"y":60,"width":250,"height":60,"type":"text","text":"S3 storage"},
 		{"id":"a589122f6acb6529","x":520,"y":150,"width":250,"height":120,"type":"text","text":"Data base\nname - text \ndescription - text \nsource - text\n"},
-		{"id":"67616345ba2ce3e4","type":"text","text":"SubService - Golang","x":60,"y":320,"width":250,"height":60},
 		{"id":"3978a4d55f0b1f46","type":"text","text":"Веб-клиент - Next.js","x":-120,"y":-280,"width":200,"height":60},
-		{"id":"c2eec1fdd9406f1c","type":"text","text":"Веб-клиент- для админа - Next.js","x":-400,"y":-280,"width":200,"height":60}
+		{"id":"c2eec1fdd9406f1c","type":"text","text":"Веб-клиент- для админа - Next.js","x":-400,"y":-280,"width":200,"height":60},
+		{"id":"ee6615f94d59c1a0","x":-270,"y":520,"width":250,"height":60,"type":"text","text":"NotificationService  -Golang/Python"},
+		{"id":"fd0ca14e45d32053","x":-600,"y":380,"width":250,"height":60,"type":"text","text":"UGCService - Python"},
+		{"id":"67616345ba2ce3e4","type":"text","text":"SubService - Golang","x":60,"y":380,"width":250,"height":60},
+		{"id":"1b23ed92d35bdedc","x":-600,"y":250,"width":250,"height":60,"type":"text","text":"LoyaltyService - Python"},
+		{"id":"0791ff4a236d362b","type":"text","text":"ProfileService - Python","x":-600,"y":120,"width":250,"height":60},
+		{"id":"472b93413053ce2c","type":"text","text":"FilmService - Golang","x":60,"y":120,"width":250,"height":60},
+		{"id":"afe835c1e059dfda","x":60,"y":240,"width":250,"height":60,"type":"text","text":"BookingService"}
 	],
 	"edges":[
 		{"id":"c5c0a8849850feb4","fromNode":"3978a4d55f0b1f46","fromSide":"bottom","toNode":"9b0a1fd5f2751d23","toSide":"top"},
@@ -41,6 +42,14 @@
 		{"id":"a1f875c916b34b5a","fromNode":"fd0ca14e45d32053","fromSide":"right","toNode":"67616345ba2ce3e4","toSide":"left"},
 		{"id":"a24a29fee3c2521a","fromNode":"67616345ba2ce3e4","fromSide":"left","toNode":"0791ff4a236d362b","toSide":"right"},
 		{"id":"c1f89e0837598ccd","fromNode":"0791ff4a236d362b","fromSide":"right","toNode":"67616345ba2ce3e4","toSide":"left"},
-		{"id":"4bb7c59ea70ca0ab","fromNode":"9b0a1fd5f2751d23","fromSide":"top","toNode":"c2eec1fdd9406f1c","toSide":"bottom"}
+		{"id":"4bb7c59ea70ca0ab","fromNode":"9b0a1fd5f2751d23","fromSide":"top","toNode":"c2eec1fdd9406f1c","toSide":"bottom"},
+		{"id":"29a775fe1a9047f3","fromNode":"afe835c1e059dfda","fromSide":"left","toNode":"0791ff4a236d362b","toSide":"right"},
+		{"id":"950d8d14ad4c1a9f","fromNode":"0791ff4a236d362b","fromSide":"right","toNode":"afe835c1e059dfda","toSide":"left"},
+		{"id":"19dad86836f00142","fromNode":"afe835c1e059dfda","fromSide":"right","toNode":"472b93413053ce2c","toSide":"right"},
+		{"id":"22dd5b9ef18ae7c9","fromNode":"472b93413053ce2c","fromSide":"right","toNode":"afe835c1e059dfda","toSide":"right"},
+		{"id":"8bdb2ee0954f81bd","fromNode":"afe835c1e059dfda","fromSide":"left","toNode":"ee6615f94d59c1a0","toSide":"top"},
+		{"id":"0c3b3ae971066419","fromNode":"ee6615f94d59c1a0","fromSide":"top","toNode":"afe835c1e059dfda","toSide":"left"},
+		{"id":"9ac07dd9af14095f","fromNode":"0791ff4a236d362b","fromSide":"right","toNode":"ee6615f94d59c1a0","toSide":"top"},
+		{"id":"c283ea0d16e79f05","fromNode":"ee6615f94d59c1a0","fromSide":"top","toNode":"0791ff4a236d362b","toSide":"right"}
 	]
 }
