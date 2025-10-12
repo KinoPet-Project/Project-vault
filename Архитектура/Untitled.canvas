@@ -1,6 +1,17 @@
 {
 	"nodes":[
-		{"id":"3978a4d55f0b1f46","x":-260,"y":-260,"width":200,"height":60,"type":"text","text":"Веб-клиент - Next.js"}
+		{"id":"3978a4d55f0b1f46","x":-260,"y":-260,"width":200,"height":60,"type":"text","text":"Веб-клиент - Next.js"},
+		{"id":"9b0a1fd5f2751d23","x":-285,"y":-140,"width":250,"height":60,"type":"text","text":"BFF - backend for frontend"},
+		{"id":"02c00e4e9871d38d","x":-285,"y":-20,"width":250,"height":60,"type":"text","text":"Traefik - reverse proxy"},
+		{"id":"6bd382515edd3b28","x":60,"y":-20,"width":250,"height":60,"type":"text","text":"ForwardAuth -  Golang"},
+		{"id":"472b93413053ce2c","x":60,"y":120,"width":250,"height":60,"type":"text","text":""}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"c5c0a8849850feb4","fromNode":"3978a4d55f0b1f46","fromSide":"bottom","toNode":"9b0a1fd5f2751d23","toSide":"top"},
+		{"id":"d93d8a4436a32198","fromNode":"9b0a1fd5f2751d23","fromSide":"top","toNode":"3978a4d55f0b1f46","toSide":"bottom"},
+		{"id":"8775ab5eb8a3e5b4","fromNode":"9b0a1fd5f2751d23","fromSide":"bottom","toNode":"02c00e4e9871d38d","toSide":"top"},
+		{"id":"6f220d8cd59e8e59","fromNode":"02c00e4e9871d38d","fromSide":"top","toNode":"9b0a1fd5f2751d23","toSide":"bottom"},
+		{"id":"95acf199da37beda","fromNode":"02c00e4e9871d38d","fromSide":"right","toNode":"6bd382515edd3b28","toSide":"left"},
+		{"id":"887d8fa9cdcec5ee","fromNode":"6bd382515edd3b28","fromSide":"left","toNode":"02c00e4e9871d38d","toSide":"right"}
+	]
 }
